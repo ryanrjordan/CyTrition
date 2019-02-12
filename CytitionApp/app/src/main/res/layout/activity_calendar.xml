@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.YT_8.cytrition.calendar.CalendarActivity">
+
+
+    <ProgressBar
+        android:id="@+id/weeklyProgBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:max="100"
+        android:maxHeight="40dp"
+        android:minHeight="40dp"
+        android:progress="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/dailyProgBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:max="100"
+        android:maxHeight="40dp"
+        android:minHeight="40dp"
+        android:progress="5"
+        app:layout_constraintBottom_toTopOf="@+id/weeklyProgTV"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dailyProgTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Daily Progress"
+        app:layout_constraintBottom_toTopOf="@+id/dailyProgBar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/weeklyProgTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="Weekly Progress"
+        app:layout_constraintBottom_toTopOf="@+id/weeklyProgBar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="228dp"
+        android:layout_height="187dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/viewDayDataButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Selected Day Data" />
+
+            <Button
+                android:id="@+id/addBreakfastButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Breakfast" />
+
+            <Button
+                android:id="@+id/addLunchButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Lunch" />
+
+            <Button
+                android:id="@+id/addSnackButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Snack" />
+
+            <Button
+                android:id="@+id/addDinnerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Dinner" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

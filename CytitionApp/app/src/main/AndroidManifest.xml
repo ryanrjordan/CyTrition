@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.YT_8.cytrition">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomePageActivity"
+            android:label="Home Page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".tools.CalculatorActivity"
+            android:parentActivityName=".HomePageActivity" />
+        <activity
+            android:name=".calendar.CalendarActivity"
+            android:parentActivityName=".HomePageActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".personal.EditProfileActivity"
+            android:label="Edit Profile"
+            android:parentActivityName=".HomePageActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".family.ManageFamilyActivity"
+            android:parentActivityName=".HomePageActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".food.RecipeActivity"
+            android:label="Recipes"
+            android:parentActivityName=".HomePageActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".food.IngredientActivity"
+            android:label="Ingredients"
+            android:parentActivityName=".food.SingleRecipeActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".food.AddRecipeActivity"
+            android:label="Add Recipes"
+            android:parentActivityName=".food.RecipeActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".food.SingleRecipeActivity"
+            android:label="Recipe"
+            android:parentActivityName=".food.RecipeActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".food.AddIngredientActivity"
+            android:label="Add Ingredients"
+            android:parentActivityName=".food.SingleRecipeActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".family.AddChildActivity"
+            android:parentActivityName=".family.ManageFamilyActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".calendar.AddCalendarMealActivity"
+            android:parentActivityName=".tools.CalculatorActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".bugs.SubmitBugActivity"
+            android:parentActivityName=".HomePageActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".bugs.ViewReportsActivity"
+            android:parentActivityName=".HomePageActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".bugs.ResolveBugActivity"
+            android:parentActivityName=".bugs.ViewReportsActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".family.ManageChildActivity"
+            android:parentActivityName=".family.ManageFamilyActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity android:name=".calendar.ViewMealsActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:parentActivityName=".LoginActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name=".tools.GroceryListActivity"
+            android:parentActivityName=".HomePageActivity"
+            tools:ignore="UnusedAttribute" />
+        <activity android:name=".test.SpringTestActivity" />
+        <activity android:name=".personal.SetLimitsActivity"
+            android:parentActivityName=".HomePageActivity"
+            tools:ignore="UnusedAttribute" />
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Cytrition</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="user_types">
+        <item>Standard User</item>
+        <item>Parent/Family</item>
+        <item>Personal Nutritionist</item>
+        <item>Food Provider</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+</resources>
